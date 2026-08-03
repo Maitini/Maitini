@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 160" width="100%" role="img" aria-labelledby="tp">
+<title id="tp">Pie de página</title>
+
+<defs>
+<linearGradient id="o1" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#00E5FF"/>
+  <stop offset="1" stop-color="#B026FF"/>
+</linearGradient>
+<linearGradient id="o2" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#B026FF"/>
+  <stop offset="1" stop-color="#00E5FF"/>
+</linearGradient>
+<clipPath id="cp"><rect y="0" width="1200" height="160" rx="20"/></clipPath>
+</defs>
+
+<style>
+.m{font-family:ui-monospace,'Cascadia Mono',Consolas,'DejaVu Sans Mono',monospace}
+</style>
+
+<g clip-path="url(#cp)">
+<rect width="1200" height="160" fill="#07070C"/>
+
+<g opacity=".22">
+<path fill="url(#o2)" d="M0 96 C 100 66 200 66 300 96 C 400 126 500 126 600 96 C 700 66 800 66 900 96 C 1000 126 1100 126 1200 96 C 1300 66 1400 66 1500 96 C 1600 126 1700 126 1800 96 C 1900 66 2000 66 2100 96 C 2200 126 2300 126 2400 96 L2400 160 L0 160 Z">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="-1200 0" dur="14s" repeatCount="indefinite"/>
+</path>
+</g>
+
+<g opacity=".45">
+<path fill="url(#o1)" d="M0 116 C 150 88 250 144 400 116 C 550 88 650 144 800 116 C 950 88 1050 144 1200 116 C 1350 88 1450 144 1600 116 C 1750 88 1850 144 2000 116 C 2150 88 2250 144 2400 116 L2400 160 L0 160 Z">
+  <animateTransform attributeName="transform" type="translate" from="-1200 0" to="0 0" dur="9s" repeatCount="indefinite"/>
+</path>
+</g>
+
+<text class="m" x="600" y="58" text-anchor="middle" font-size="14" fill="#F2F0FF">gracias por pasarte</text>
+<text class="m" x="600" y="82" text-anchor="middle" font-size="11.5" fill="#4E4E63">si has llegado hasta aquí, escríbeme</text>
+</g>
+</svg>
