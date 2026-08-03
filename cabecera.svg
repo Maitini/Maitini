@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" role="img" aria-labelledby="titulo">
+<title id="titulo">Maitini — desarrollador y diseñador</title>
+
+<defs>
+<linearGradient id="barra" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#00E5FF"/>
+  <stop offset="1" stop-color="#B026FF"/>
+</linearGradient>
+<linearGradient id="pulso" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#00E5FF" stop-opacity="0"/>
+  <stop offset="1" stop-color="#00E5FF" stop-opacity="1"/>
+</linearGradient>
+<clipPath id="marco"><rect width="1200" height="420" rx="20"/></clipPath>
+</defs>
+
+<style>
+.d{font-family:'Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif}
+.m{font-family:ui-monospace,'Cascadia Mono',Consolas,'DejaVu Sans Mono',monospace}
+
+.barra{transform:scaleX(0);transform-origin:0 0;animation:barrer .9s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes barrer{to{transform:scaleX(1)}}
+
+.sube{opacity:0;animation:sube .7s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes sube{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.r1{animation-delay:.15s}
+.r2{animation-delay:.35s}
+.r3{animation-delay:.55s}
+.r4{animation-delay:.70s}
+
+.sub{transform:scaleX(0);transform-origin:72px 0;animation:crece .8s cubic-bezier(.2,.8,.2,1) 2.6s forwards}
+@keyframes crece{to{transform:scaleX(1)}}
+
+.k{opacity:.3;animation:enciende .55s ease forwards}
+.k rect{stroke:#ffffff;stroke-opacity:.08}
+@keyframes enciende{
+  0%{opacity:.3;transform:translateY(0)}
+  45%{opacity:1;transform:translateY(3px)}
+  100%{opacity:1;transform:translateY(0)}
+}
+.k1{animation-delay:.95s}
+.k2{animation-delay:1.08s}
+.k3{animation-delay:1.21s}
+.k4{animation-delay:1.34s}
+.k5{animation-delay:1.47s}
+.k6{animation-delay:1.60s}
+
+.cara{fill:#16161F;animation:cara .01s linear forwards}
+.cv{animation-name:caraV}
+.cc{animation-name:caraC}
+@keyframes caraV{to{fill:#1A1426;stroke:#B026FF;stroke-opacity:1}}
+@keyframes caraC{to{fill:#0E1E24;stroke:#00E5FF;stroke-opacity:1}}
+.cv{animation:caraV .4s ease forwards}
+.cc{animation:caraC .4s ease forwards}
+.f1{animation-delay:1.30s}
+.f2{animation-delay:1.43s}
+.f3{animation-delay:1.56s}
+.f4{animation-delay:1.69s}
+.f5{animation-delay:1.82s}
+.f6{animation-delay:1.95s}
+
+.pt{fill:#2A2A3A}
+.pv{animation:puntoV .4s ease 1.75s forwards}
+.pc{animation:puntoC .4s ease 1.75s forwards}
+@keyframes puntoV{to{fill:#B026FF}}
+@keyframes puntoC{to{fill:#00E5FF}}
+
+.et{fill:#6A6A85;animation:aclara .4s ease 1.75s forwards}
+@keyframes aclara{to{fill:#F2F0FF}}
+
+.viaje{opacity:0;animation:viaja 1s cubic-bezier(.4,0,.2,1) 2.0s forwards}
+@keyframes viaja{
+  0%{opacity:1;transform:translateX(0)}
+  95%{opacity:1;transform:translateX(-182px)}
+  100%{opacity:0;transform:translateX(-182px)}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.01s!important;animation-delay:0s!important}
+}
+</style>
+
+<g clip-path="url(#marco)">
+<rect width="1200" height="420" fill="#07070C"/>
+
+<g stroke="#ffffff" stroke-opacity=".03" stroke-width=".5">
+<path d="M60 0V420M120 0V420M180 0V420M240 0V420M300 0V420M360 0V420M420 0V420M480 0V420M540 0V420M600 0V420M660 0V420M720 0V420M780 0V420M840 0V420M900 0V420M960 0V420M1020 0V420M1080 0V420M1140 0V420"/>
+<path d="M0 60H1200M0 120H1200M0 180H1200M0 240H1200M0 300H1200M0 360H1200"/>
+</g>
+
+<rect class="barra" width="1200" height="3" fill="url(#barra)"/>
+
+<text class="m sube r1" x="72" y="132" font-size="13" letter-spacing="2.4" fill="#00E5FF">DESDE ESPAÑA</text>
+<text class="d sube r2" x="72" y="222" font-size="88" font-weight="700" letter-spacing="-3" fill="#F2F0FF">Maitini</text>
+<rect class="sub" x="72" y="240" width="210" height="3" fill="#B026FF"/>
+<text class="d sube r3" x="72" y="284" font-size="19" fill="#F2F0FF">Construyo herramientas<tspan fill="#6A6A85"> y las diseño yo mismo</tspan></text>
+<text class="m sube r4" x="72" y="310" font-size="12.5" fill="#6A6A85">java · php · javascript · after effects</text>
+
+<line x1="470" y1="210" x2="652" y2="210" stroke="#ffffff" stroke-opacity=".08" stroke-width="1"/>
+<g class="viaje"><rect x="592" y="209.5" width="60" height="1" fill="url(#pulso)"/></g>
+
+<g class="k k1"><rect class="cara cv f1" x="652" y="110" width="148" height="92" rx="14" stroke-width="1"/><circle class="pt pv" cx="670.5" cy="128.5" r="4.5"/><text class="m et" x="666" y="186" font-size="11.5">keyforge</text></g>
+<g class="k k2"><rect class="cara cc f2" x="816" y="110" width="148" height="92" rx="14" stroke-width="1"/><circle class="pt pc" cx="834.5" cy="128.5" r="4.5"/><text class="m et" x="830" y="186" font-size="11.5">centinela</text></g>
+<g class="k k3"><rect class="cara cv f3" x="980" y="110" width="148" height="92" rx="14" stroke-width="1"/><circle class="pt pv" cx="998.5" cy="128.5" r="4.5"/><text class="m et" x="994" y="186" font-size="11.5">serverguard</text></g>
+<g class="k k4"><rect class="cara cc f4" x="652" y="218" width="148" height="92" rx="14" stroke-width="1"/><circle class="pt pc" cx="670.5" cy="236.5" r="4.5"/><text class="m et" x="666" y="294" font-size="11.5">custommobs</text></g>
+<g class="k k5"><rect class="cara cv f5" x="816" y="218" width="148" height="92" rx="14" stroke-width="1"/><circle class="pt pv" cx="834.5" cy="236.5" r="4.5"/><text class="m et" x="830" y="294" font-size="11.5">overlays</text></g>
+<g class="k k6"><rect class="cara cc f6" x="980" y="218" width="148" height="92" rx="14" stroke-width="1"/><circle class="pt pc" cx="998.5" cy="236.5" r="4.5"/><text class="m et" x="994" y="294" font-size="11.5">motion</text></g>
+</g>
+</svg>
