@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="cabecera.PNG" width="100%" alt="Maitini — desarrollador y diseñador">
+  <img src="cabecera.png" width="100%" alt="Maitini — desarrollador y diseñador">
 </div>
 
 <br>
