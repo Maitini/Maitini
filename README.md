@@ -128,6 +128,8 @@ Sistema de mobs personalizados para Minecraft 1.21.1.
 
 ## Hablamos
 
+## Hablamos
+
 Administro sistemas, me dedico a la seguridad y construyo las herramientas que me hacen falta. Si tienes una infraestructura que asegurar o un proyecto entre manos, escríbeme.
 
 **[LinkedIn](https://www.linkedin.com/in/maitini1812/)** · **[Instagram](https://www.instagram.com/maitini1812/)**
