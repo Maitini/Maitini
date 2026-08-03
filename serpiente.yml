@@ -1,0 +1,32 @@
+name: Generar serpiente
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Dibujar la serpiente
+        uses: Platane/snk@v3
+        id: serpiente
+        with:
+          github_user_name: Maitini
+          outputs: |
+            dist/serpiente.svg?color_snake=%23B026FF&color_dots=%2307070C,%23281038,%23621B8A,%238F2AC4,%23B026FF
+
+      - name: Publicar en la rama output
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
